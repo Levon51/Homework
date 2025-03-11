@@ -1,4 +1,6 @@
-public class Main {
+package method;
+
+public class Methods {
     /**
      * Write a method which has two input parameters: type  int and return 0
      *

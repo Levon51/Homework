@@ -1,11 +1,23 @@
+package operation;
+
 public class Operation {
+
+    /**
+     * Sum and print two integers
+     * @param a
+     * @param b
+     */
+    public static void sumTwoIntegers(int a , int b) {
+        System.out.println(a+b);
+    }
 
     public static void main(String[] args) {
                             //Arithmetic Operators
-        //1․ Ստեղծել 2 փոփոխական(int a = 8, int b = 6), տպել console -ում  հետևյալը
+
         int a = 8;
         int b = 6;
-        System.out.println(a+b);
+        sumTwoIntegers(a, b);
+       // System.out.println(a+b);
         System.out.println(a*b);
         System.out.println(a/b);
         System.out.println(a-b);
