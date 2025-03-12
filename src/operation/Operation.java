@@ -106,6 +106,48 @@ public class Operation {
         long type = _y * _x;
         System.out.println(type);
 
+        //8․ Հայտարարել երկու int տիպի փոփոխականներ, վերագրել 10 և 5 այնուհետև փոփոխականի արժեքները տեղերով փոխել
+         int ten = 10;
+         int five = 5;
+         int change = five;
+         five = ten;
+         ten = change;
+         System.out.println(five);
+         System.out.println(ten);
+
+         //9․ Փորձեք 8-րդ խնդիրը լուծել առանց երրորդ փոփոխական օգտագործելու։
+        int ten1 = 10;
+        int five1 = 5;
+        five1 = 15 -  five1;
+        ten1 = ten1 - 5;
+        System.out.println(ten1);
+        System.out.println(five1);
+
+        //1․ Ստեղծել 2 փոփոխական(int a = 8, int b = 3), տպել console -ում  հետևյալը․
+            int $v = 8;
+            int $v1 = 3;
+            System.out.println($v & $v1);
+        	System.out.println($v | $v1);
+            System.out.println($v ^ $v1);
+            System.out.println(~$v);
+            System.out.println(true || ($v < 4));
+            System.out.println($v1 >=6 || (++$v <+7));
+            System.out.println(($v<$v1)?a:b);
+            System.out.println($v1^$v1);
+
+
+            //1․ Տպել console -ում  հետևյալը․
+        	 System.out.println(10 << 2);
+             System.out.println(-10 << 3);
+             System.out.println(-20 >> 2);
+             System.out.println(15 >> 3);
+
+
+
+
+
+
+
 
 
 
