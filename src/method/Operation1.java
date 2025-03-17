@@ -16,9 +16,13 @@ public class Operation1 {
 
     }
 
+    /**
+     * print all double
+     * @param c
+     * @param d
+     */
 
-
-        public static void voidDouble(double c, double d) {
+    public static void voidDouble(double c, double d) {
 
             System.out.println(c + d);
             System.out.println(c * d);
@@ -27,7 +31,10 @@ public class Operation1 {
             System.out.println(c % d);
         }
 
-        public static void sumInt() {
+    /**
+     * void integers sum
+     */
+    public static void sumInt() {
             int x = 2 * ((5 + 3) * 4 - 8);
             int y = 2 * 5 + 3 * 4 - 8;
             System.out.println(x);
@@ -36,7 +43,10 @@ public class Operation1 {
 
                                 //Unary Operators
 
-       public static void typeAll() {
+    /**
+     * print all unary oparators
+     */
+    public static void typeAll() {
            int e = 10;
            int f = -88;
            boolean n1 = true;
@@ -64,7 +74,10 @@ public class Operation1 {
 
                             //Assignment Operator
 
-       public static void typeAll2() {
+    /**
+     * void all assignment operators
+     */
+    public static void typeAll2() {
 
 
            int x1 = (int) 1.0;
@@ -78,7 +91,10 @@ public class Operation1 {
        }
                                     //Relational Operators
 
-      public static void typeRelationalOperation() {
+    /**
+     * void all relational operators
+     */
+    public static void typeRelationalOperator() {
           int $x = 10;
           int $y = 20;
           System.out.println($x < $y);
@@ -86,8 +102,12 @@ public class Operation1 {
           System.out.println($x >= $y);
           System.out.println($x > $y);
 
-      }                            //Additional  tasks
-        public static void typeAddition() {
+        /**
+         * void additional operators
+         */
+    }
+
+    public static void typeAddition() {
             float yy = 2.1f;
 
             byte xx = 5;
@@ -106,6 +126,10 @@ public class Operation1 {
             System.out.println(type);
         }
 
+    /**
+     * call all methods and print
+     * @param args
+     */
 
     public static void main(String[] args) {
         sumTwoIntegers(8,6);
@@ -113,7 +137,7 @@ public class Operation1 {
         sumInt();
         typeAll();
         typeAll2();
-        typeRelationalOperation();
+        typeRelationalOperator();
 
     }
 
