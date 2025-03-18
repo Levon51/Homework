@@ -35,7 +35,7 @@ public class Variables {
         System.out.println(num);
         System.out.println(num1);
 
-                                        //GROUP (Floating point number)
+        //GROUP (Floating point number)
 
         //7․ Ստեղծել 2 փոփոխական(float j և float k ),  վերագրել կամայական արժեքներ և տպել console -ում
         float j = 753433.56f;
@@ -73,7 +73,7 @@ public class Variables {
         //բոլորը կարող ենք վերագրել և float ին և double ին, որովհետև այս բոլոր թվերը (.) ամբողջ թվեր են իսկ այս տիպերը
         // պատկանում են ամբողջական դասին։
 
-                                            //GROUP (Character)
+        //GROUP (Character)
 
         //11․ Ստեղծել 2 փոփոխական(char n և char o ) վերագրել կամայական արժեքներ և տպել   console -ում․
         char n = 'b';
@@ -101,11 +101,11 @@ public class Variables {
         System.out.println(p);
         System.out.println(q);
 
-        //14. Ի՞նչ կտպի կոդի այս հատվածը և ինչու՞։
-           // int year = 201l;
-             //System.out.print (year);
-        //այս կոդը error կտա քանի որ int ում թվից բացի գրվաց տառ, իսկ int ում թվից բացի ոչինչ չպետք է լինի անգամ ամբողջ
-        //թիվ
+        /*14. Ի՞նչ կտպի կոդի այս հատվածը և ինչու՞։
+         int year = 201l;
+        System.out.print (year);
+        այս կոդը error կտա քանի որ int ում թվից բացի գրվաց տառ, իսկ int ում թվից բացի ոչինչ չպետք է լինի անգամ ամբողջ
+        թիվ*/
 
         //15. Ստեղծել int aa  = 7 և long bb փոփոխականներ,
         //      կատարել Cast գործողություն  aa -> bbb  և տպել console -ում․
@@ -139,7 +139,9 @@ public class Variables {
         //19․ Գտնել սխալը , ուղղել և տպել
         long max = 3123456789L;
         double tt = 1000.00d;
-        char i ='i'; char jj='j'; char ij = 'i' + 'j';
+        char i = 'i';
+        char jj = 'j';
+        char ij = 'i' + 'j';
         int ll = 8;
         long hh = 8;
         int nn = 10, mm = 11;
@@ -154,21 +156,10 @@ public class Variables {
         System.out.println(nn);
 
 
-
-
-
-
-
-
-
-
-
-
-
     }
 
 
-    }
+}
 
 
 

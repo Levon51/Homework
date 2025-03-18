@@ -6,7 +6,9 @@ public class Car {
     public String color;
     public int currentSpeed;
     public boolean isEngineStart;
+        Car(){
 
+        }
     public void startEngine() {
         System.out.println(model);
         System.out.println(modelNumber);
@@ -20,9 +22,7 @@ public class Car {
     System.out.println(isEngineStart);
     }
 
-    Car() {
 
-    }
 
     public static void main(String[] args) {
         Car car = new Car();

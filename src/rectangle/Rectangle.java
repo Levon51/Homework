@@ -10,15 +10,15 @@ public class Rectangle {
     public int width;
 
 
-        public void calculateArea(int length, int width) {
-            int area = length * width;
-            System.out.println(area);
+    public void calculateArea(int length, int width) {
+        int area = length * width;
+        System.out.println(area);
 
-        }
+    }
 
-        public static void main(String[] args) {
-            Rectangle rectangle = new Rectangle();
-            rectangle.calculateArea(5, 14);
+    public static void main(String[] args) {
+        Rectangle rectangle = new Rectangle();
+        rectangle.calculateArea(5, 14);
 
-        }
+    }
 }
