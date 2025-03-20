@@ -12,6 +12,9 @@ public class ArrayUtil {
         float[] f = {-32, 4555, 0, 45553, -2, 5, -90, 2};
         printFloatMinValue(f);
         sumArrays();
+        countAndPrint();
+        printThreeDigits();
+        printArray();
     }
 
     /**
@@ -73,9 +76,9 @@ public class ArrayUtil {
      * Գրել method, որը ստեղծում է երկու նույն չափը ունեցող array-ներ
      * գումարում է array -ի համապատասխան էլեմենտները և գրում երրորդ array-ի մեջ։
      */
-    public static void sumArrays(){
-        int[] array1 = {1,5,6,3,6};
-        int[] array2 = {9,7,5,3,1};
+    public static void sumArrays() {
+        int[] array1 = {1, 5, 6, 3, 6};
+        int[] array2 = {9, 7, 5, 3, 1};
         int[] array3 = new int[array1.length];
 
         for (int i = 0; i < array1.length; i++) {
@@ -84,5 +87,52 @@ public class ArrayUtil {
         for (int j = 0; j < array3.length; j++) {
             System.out.print(array3[j]);
         }
+    }
+
+    /**
+     * . Գրել method, որը հաշվում է թե քանի անգամ է  k թիվը հանդիպել array-ի  Էլեմենտների մեջ։
+     */
+    public static void countAndPrint() {
+        int[] array1 = {2, 4, 4, 5, 4};
+        int k = 4;
+        int count = 0;
+        for (int i = 0; i < array1.length; i++) {
+            if (array1[i] == k) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+    /**
+     * Գրել method, որը  տպում է բոլոր չկրկնվող եռյակները array -ի։
+     * Եռյակներում թվերի դասավորությունը էական չէ
+     */
+    public static void printThreeDigits() {
+        int[] array = {2, 3, 4, 5};
+        for (int i = 0; i < array.length - 2; i++) {
+            for (int j = i + 1; j < array.length - 1; j++) {
+                for (int k = j + 1; k < array.length; k++) {
+                    System.out.println(array[i] + " " + array[j] + " " + array[k]);
+                }
+            }
+        }
+    }
+
+    /**
+     * Դասավորել տրված թվերի հաջորդականության անդամները նվազման կարգով:
+     */
+    public static void printArray() {
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        for (int i = 8; i > -1; i--) {
+            System.out.println(array[i]);
+        }
+
+    }
+    /**
+     * Դասավորել տրված ամբողջ թվերի հաջորդականության անդամներն անյպես, որ վերջում լինեն կենտերը:
+     */
+    public static void printArrayDigits(){
+
     }
 }
