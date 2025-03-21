@@ -12,9 +12,18 @@ public class ArrayUtil {
         float[] f = {-32, 4555, 0, 45553, -2, 5, -90, 2};
         printFloatMinValue(f);
         sumArrays();
-        countAndPrint();
+        System.out.println(countAndPrint(7));
         printThreeDigits();
         printArray();
+        int[] a = {0, 4, 7, 0, 1, 0};
+        printRemoveZero(a);
+        int[] j = {0b010011011};
+        printToBinary(j);
+        int[][] b = new int[][]{
+                {2, 0, 1, 1},
+                {0, 7, 3, 6},
+                {0, 3, 1, 4}};
+        printIfStatements(b);
     }
 
     /**
@@ -92,16 +101,15 @@ public class ArrayUtil {
     /**
      * . Գրել method, որը հաշվում է թե քանի անգամ է  k թիվը հանդիպել array-ի  Էլեմենտների մեջ։
      */
-    public static void countAndPrint() {
+    public static int countAndPrint(int k) {
         int[] array1 = {2, 4, 4, 5, 4};
-        int k = 4;
         int count = 0;
         for (int i = 0; i < array1.length; i++) {
             if (array1[i] == k) {
                 count++;
             }
         }
-        System.out.println(count);
+        return count;
     }
 
     /**
@@ -129,10 +137,55 @@ public class ArrayUtil {
         }
 
     }
+
     /**
      * Դասավորել տրված ամբողջ թվերի հաջորդականության անդամներն անյպես, որ վերջում լինեն կենտերը:
+     *
+     * @param a
      */
-    public static void printArrayDigits(){
+    public static void printRemoveZero(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != 0) {
+                System.out.print(a[i] + " ");
+            }
+        }
 
     }
+
+    /**
+     * Ներածել n բնական թիվը 2-ական տեսքով՝ ստանալով 0-ներից ու 1-երից կազմված զանգված
+     * և արտածել n  թվի 10-ական ներկայացումը:
+     *
+     * @param j
+     */
+    public static void printToBinary(int[] j) {
+        for (int i = 0; i < j.length; i++) {
+            System.out.println(j[i]);
+        }
+
+    }
+
+    /**
+     * ․ Տրված բնական թվերի քառակուսային մատրիցի համար արտածել YES,
+     * եթե նրա բոլոր տողերի տարրերի գումարը զույգ է։  NO հակառակ դեպքում։
+     *
+     * @param b
+     */
+    public static void printIfStatements(int[][] b) {
+        for (int i = 0; i < b.length; i++) {
+            int sum = 0;
+            for (int j = 0; j < b[i].length; j++) {
+                sum += b[i][j];
+            }
+            if (sum % 2 != 0) {
+                System.out.println("NO");
+                return;
+            }
+
+            System.out.println("YES");
+        }
+    }
 }
+
+
+
