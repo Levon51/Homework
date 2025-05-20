@@ -4,6 +4,7 @@
 *.json
 *.xml
 *.html
+/Homework.iml
 
 # Log file
 *.log
